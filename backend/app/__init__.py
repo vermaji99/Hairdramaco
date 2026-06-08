@@ -10,7 +10,7 @@ def create_app():
 
     # Initialize extensions
     db.init_app(app)
-    CORS(app, resources={r"/*": {"origins": ["http://localhost:3000", "http://localhost:3001"]}}, supports_credentials=True)
+    CORS(app, resources={r"/*": {"origins": "*"}}, supports_credentials=True)
     JWTManager(app)
 
     # Register blueprints
