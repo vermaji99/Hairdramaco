@@ -160,13 +160,12 @@ export default function LoginPage() {
                   </div>
                 </div>
 
-                <div className="flex justify-center">
+                <div className="flex justify-center w-full">
                   <GoogleLogin
                     onSuccess={handleSuccess}
                     onError={() => toast.error('Login Failed')}
                     theme="filled_blue"
                     shape="pill"
-                    width="100%"
                   />
                 </div>
                 
